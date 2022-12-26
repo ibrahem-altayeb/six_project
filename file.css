@@ -1,0 +1,94 @@
+:root{
+  --Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+  --Very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
+  --Bright-orange: hsl(31, 77%, 52%);
+--Dark-cyan: hsl(184, 100%, 22%);
+--Very-dark-cyan: hsl(179, 100%, 13%);
+--color: hsl(228, 45%, 44%);
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&family=Montserrat:wght@500;700&family=Open+Sans:wght@300;400;500;700;800&family=Outfit:wght@300;400;600&family=Red+Hat+Display:wght@500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Inter:wght@400;700&family=Lexend+Deca&family=Montserrat:wght@500;700&family=Open+Sans:wght@300;400;500;700;800&family=Outfit:wght@300;400;600&family=Red+Hat+Display:wght@500;700;900&display=swap');
+body{
+  font-family: 'Big Shoulders Display';
+  font-family: 'Lexend Deca', sans-serif;
+  Font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: white;
+}
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+.card{
+  display: grid;
+  grid-template-columns: repeat(auto-fill , minmax(250px , 1fr));
+
+}
+.card .box.orange{
+background-color: var(--Bright-orange);
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+}
+.card .box.blue{
+  background-color: var(--Dark-cyan);
+}
+
+.card .box.green{
+  background-color: var(--Very-dark-cyan);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.card .box .text{
+  padding: 45px 64px 45px 45px;
+}
+.card .box .text h1{
+  margin-top: 37px;
+  font-size: 39px;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+  font-family: 'Lexend Deca';
+  font-weight: normal;
+  color: var(--Transparent-white-paragraphs);
+}
+.card .box .text p{
+  margin-top: 37px;
+  color: var(--Transparent-white-paragraphs);
+  line-height: 1.8;
+}
+.card .box .text a{
+  text-decoration: none;
+  margin-top: 80px;
+  display: block;
+  background-color: white;
+  padding: 25px;
+  border-radius: 38px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  border: 4px solid white;
+  transition: 0.3s;
+}
+.card .box.orange a{
+  color: var(--Bright-orange);
+}
+.card .box.blue a{
+  color: var(--Dark-cyan);
+}
+.card .box.green a{
+  color: var(--Very-dark-cyan)
+}
+.card .box .text a:hover{
+  background-color: var(--Bright-orange);
+  color: white;
+}
+.card .box.blue .text a:hover{
+  background-color: var(--Dark-cyan);
+  color: white;
+}
+.card .box.green .text a:hover{
+  background-color: var(--Very-dark-cyan);
+  color: white;
+}
